@@ -23,7 +23,7 @@ function displayYouTubeSearchData(data) {
   var imageURL = '';
   if (data.items) {
     data.items.forEach(function(item) {
-     resultElement += '<p><a href="https://www.youtu.be./' + item.id.videoId + '"><img src=' + item.snippet.thumbnails.default.url + '></a><br>' + item.snippet.title + '</p>';
+     resultElement += '<p><a href="https://www.youtube./' + item.id.videoId + '"><img src=' + item.snippet.thumbnails.default.url + '></a><br>' + item.snippet.title + '</p>';
     });
   }
   else {
